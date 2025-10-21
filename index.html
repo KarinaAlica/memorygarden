@@ -8,17 +8,7 @@
 <style>
 /* BODY & BACKGROUND */
 body {
-    background-color: #0d0d0d;
-    background-image: 
-        url('https://upload.wikimedia.org/wikipedia/commons/3/3e/John_William_Waterhouse_-_The_Soul_of_the_Rose%2C_1903.jpg'),
-        url('https://upload.wikimedia.org/wikipedia/commons/2/2e/John_William_Waterhouse_-_The_Lady_of_Shalott%2C_1888.jpg'),
-        url('https://upload.wikimedia.org/wikipedia/commons/6/6f/John_William_Waterhouse_-_Ophelia%2C_1894.jpg'),
-        url('https://upload.wikimedia.org/wikipedia/commons/4/47/John_William_Waterhouse_-_Boreas%2C_1903.jpg'),
-        url('https://upload.wikimedia.org/wikipedia/commons/5/5d/John_William_Waterhouse_-_Gather_Ye_Rosebuds_While_Ye_May%2C_1909.jpg');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top left, center center, center center, bottom right, bottom left;
-    background-size: 25%, 30%, 25%, 20%, 25%;
-    background-blend-mode: lighten;
+    background-color: #0d0d0d; /* dark whimsical background */
     font-family: 'Courier New', monospace;
     color: #e0dcd5;
     margin: 0;
@@ -41,13 +31,14 @@ body {
     display: block;
     text-decoration: none;
     color: #e0dcd5;
-    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Courier New', monospace;
     margin: 10px;
     padding: 8px;
     background-color: rgba(62, 42, 62, 0.85);
     border: 2px inset #5c3a4d;
     transition: all 0.3s;
     text-align: center;
+    font-size: 0.95em;
 }
 
 .sidebar a:hover {
@@ -68,11 +59,12 @@ header {
 marquee, .bulletin {
     font-family: 'Courier New', monospace;
     color: #d9c7b8;
+    font-size: 1em;
 }
 
 /* HEADINGS */
 h1, h2 {
-    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Courier New', monospace;
     color: #c9a9c9;
     margin-left: 180px;
 }
@@ -173,10 +165,6 @@ footer {
     width: 95%;
     font-size: 1.1em;
   }
-  body {
-    background-position: center center, center center, center center, center center, center center;
-    background-size: cover;
-  }
   .symbol {
     font-size: 0.9em;
   }
@@ -190,14 +178,14 @@ footer {
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-    <a href="#">Home ✿</a>
-    <a href="#">Folklore ☾</a>
-    <a href="#">Material ♫</a>
-    <a href="#">Art ★</a>
-    <a href="#">Archive ☼</a>
-    <a href="#">About ☺</a>
-    <a href="#">Links ✿</a>
-    <a href="#">Contact ✧</a>
+    <a href="#">Home / Foyer ✿</a>
+    <a href="#">Journal Room 🖋️</a>
+    <a href="#">Folklore & Field Notes 🌾</a>
+    <a href="#">Apothecary / Herbarium 🌿</a>
+    <a href="#">Collages & Ephemera 🖼️</a>
+    <a href="#">Kitchen / Hearth 🍞</a>
+    <a href="#">Manifesto / About the Archivist 🕯️</a>
+    <a href="#">The Vault 🔒</a>
 </div>
 
 <header class="main-content">
@@ -207,24 +195,45 @@ footer {
 
 <div class="bulletin">★ New folklore, art, and material entries added daily! ☾ Visit often ✿</div>
 
+<!-- ARCHIVE SECTIONS -->
 <div class="main-content archive-item">
-    <h2>Folklore ☾</h2>
-    <p>Stories, myths, and magical traditions curated for whimsical exploration ✿</p>
+    <h2>Home / Foyer ✿</h2>
+    <p>“Welcome to the Archive of Karina Silva — where fragments of time are preserved.”</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Material ♫</h2>
-    <p>Resources, craft ideas, and archival material from past eras ★</p>
+    <h2>Journal Room 🖋️</h2>
+    <p>Personal reflections, letters, essays, or notes from the present. Optional filters: moods, themes, or dates.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Art ★</h2>
-    <p>Illustrations, sketches, and visuals capturing vintage and mystical vibes ☺</p>
+    <h2>Folklore & Field Notes 🌾</h2>
+    <p>A growing catalog of myths, traditions, and plant lore you’ve gathered. Could include scans, photos of handwritten notes, or short essays.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Archive ☼</h2>
-    <p>Older entries and notes preserved for posterity ✿</p>
+    <h2>Apothecary / Herbarium 🌿</h2>
+    <p>Herbal recipes, foraging notes, and natural remedies. Designed like an old medical ledger or illustrated grimoire page.</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>Collages & Ephemera 🖼️</h2>
+    <p>Scanned collages, photos, letters, fragments, or art pieces. Each image could open to a “note” or caption.</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>Kitchen / Hearth 🍞</h2>
+    <p>Recipes, home rituals, and traditions. Feels like an old recipe card system or kitchen diary.</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>Manifesto / About the Archivist 🕯️</h2>
+    <p>A poetic statement of intent about why you’re building this — your mission, voice, and guiding spirit.</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>The Vault 🔒</h2>
+    <p>Password-protected area for drafts, personal entries, or experimental work. Optional / private.</p>
 </div>
 
 <footer class="main-content">
