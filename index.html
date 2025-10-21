@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Memory Garden 🌸</title>
+<title>Memory Garden</title>
 
 <style>
 /* BODY & BACKGROUND */
 body {
-    background-color: #fdf6e3;
-    background-image: url('https://i.imgur.com/EZxwC3G.png');
+    background-color: #013220; /* dark vintage green */
+    background-image: url('https://i.imgur.com/EZxwC3G.png'); /* subtle texture */
     background-repeat: repeat;
     font-family: 'Courier New', monospace;
-    color: #333;
+    color: #cfcfcf;
     margin: 0;
     padding: 0;
 }
@@ -24,8 +24,8 @@ body {
     top: 0;
     width: 160px;
     height: 100%;
-    background-color: #d8a39d;
-    border-right: 3px solid #cfae7d;
+    background-color: #1e4d2b; /* slightly lighter green */
+    border-right: 3px solid #556b2f;
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
 }
@@ -33,27 +33,27 @@ body {
 .sidebar a {
     display: block;
     text-decoration: none;
-    color: #556b2f;
+    color: #cfcfcf;
     font-family: 'Goudy Bookletter 1911', serif;
     margin: 10px;
     padding: 8px;
-    background-color: #fff8f0;
-    border: 2px inset #cfae7d;
+    background-color: #2c6b3d;
+    border: 2px inset #556b2f;
     transition: all 0.3s;
     text-align: center;
 }
 
 .sidebar a:hover {
     transform: scale(1.05);
-    background-color: #cfae7d;
-    color: #fff8f0;
+    background-color: #556b2f;
+    color: #f0f0f0;
 }
 
 /* HEADER & MARQUEE */
 header {
     margin-left: 160px;
-    background-color: #d8a39d;
-    border: 3px solid #cfae7d;
+    background-color: #1e4d2b;
+    border: 3px solid #556b2f;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
@@ -61,51 +61,38 @@ header {
 
 marquee, .bulletin {
     font-family: 'Courier New', monospace;
-    color: #556b2f;
+    color: #cfcfcf;
 }
 
 /* HEADINGS */
 h1, h2 {
     font-family: 'Goudy Bookletter 1911', serif;
-    color: #556b2f;
+    color: #a0d6b4; /* soft vintage greenish */
     margin-left: 160px;
 }
 
 /* ARCHIVE ITEMS */
 .archive-item {
-    border: 2px solid #cfae7d;
+    border: 2px solid #556b2f;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    background-color: #fff8f0;
+    background-color: #2c6b3d;
     padding: 15px;
     margin: 20px auto;
     width: 70%;
     transition: transform 0.3s;
+    color: #e0e0d1;
 }
 
 .archive-item:hover {
     transform: scale(1.03);
 }
 
-/* FLOATING PIXEL/VINTAGE GIFS */
-.floating-gif {
-    position: absolute;
-    width: 50px;
-    animation: float 6s ease-in-out infinite;
-    filter: sepia(0.5) contrast(1.1);
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
 /* FOOTER */
 footer {
     margin-top: 40px;
-    border-top: 3px solid #cfae7d;
+    border-top: 3px solid #556b2f;
     padding: 10px;
-    background-color: #fdf6e3;
+    background-color: #1e4d2b;
     margin-left: 160px;
 }
 
@@ -124,7 +111,7 @@ footer {
     width: 100%;
     top: 50%;
     font-size: 1.2em;
-    color: #a0522d;
+    color: #a0d6b4;
     animation: scroll-left 20s linear infinite;
     white-space: nowrap;
 }
@@ -138,45 +125,46 @@ footer {
 .main-content {
     margin-left: 160px;
 }
+
+/* VINTAGE 90s STYLE SYMBOLS */
+.symbol {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
 </style>
 </head>
 <body>
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-    <a href="#">Home</a>
-    <a href="#">Archive</a>
-    <a href="#">About</a>
-    <a href="#">Links</a>
-    <a href="#">Contact</a>
+    <a href="#">Home ★</a>
+    <a href="#">Archive ☼</a>
+    <a href="#">About ♫</a>
+    <a href="#">Links ✿</a>
+    <a href="#">Contact ☺</a>
 </div>
 
 <header class="main-content">
-    <h1>🌸 Memory Garden 🌸</h1>
-    <marquee behavior="scroll" direction="left">Vintage meets 90s web! Victorian vibes, pixel fun, and retro chaos ✨</marquee>
+    <h1>Memory Garden ✿☼★</h1>
+    <marquee behavior="scroll" direction="left">Vintage meets 90s web! Retro vibes, Victorian hints, and pixel nostalgia ✨</marquee>
 </header>
 
 <!-- Bulletin scrolling text -->
-<div class="bulletin">✨ New entries added daily! Visit often! ✨</div>
+<div class="bulletin">✿ New entries added daily! ★ Visit often ☼ ✿</div>
 
 <div class="main-content archive-item">
-    <h2>💌 Entry #1</h2>
-    <p>Remembering childhood vibes and old internet magic, now with vintage charm.</p>
+    <h2>Entry #1 ♫</h2>
+    <p>Remembering childhood vibes and early internet magic, now with vintage charm ☺ ✿</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>💾 Entry #2</h2>
-    <p class="blink">Under construction... Stay tuned! 🌟</p>
+    <h2>Entry #2 ☼</h2>
+    <p class="blink">Under construction... Stay tuned! ★ ✿</p>
 </div>
-
-<!-- Floating GIFs -->
-<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:100px; left:200px;">
-<img src="https://i.imgur.com/3Lw7d.gif" class="floating-gif" style="top:250px; left:50%;">
-<img src="https://i.imgur.com/FY3K3gC.gif" class="floating-gif" style="bottom:10px; right:10px; width:80px; filter: sepia(0.4);">
 
 <footer class="main-content">
-    <p>© 2025 Memory Garden. A 90s-vintage GeoCities-style web experience 💻✨</p>
+    <p>© 2025 Memory Garden. Retro 90s + vintage vibes ☺ ★ ✿</p>
 </footer>
 
 </body>
-<
+</html>
