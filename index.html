@@ -10,12 +10,15 @@
 body {
     background-color: #0d0d0d;
     background-image: 
-        url('https://i.imgur.com/0Q8bM9b.png'), /* subtle parchment */
-        url('https://i.imgur.com/5xBf7ZP.png'), /* floral collage overlay */
-        url('https://i.imgur.com/xpL8vJ1.png'); /* vintage botanical overlay */
-    background-repeat: repeat, no-repeat, no-repeat;
-    background-position: top left, center, center;
-    background-size: auto, cover, cover;
+        url('https://upload.wikimedia.org/wikipedia/commons/3/3e/John_William_Waterhouse_-_The_Soul_of_the_Rose%2C_1903.jpg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/2/2e/John_William_Waterhouse_-_The_Lady_of_Shalott%2C_1888.jpg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/6/6f/John_William_Waterhouse_-_Ophelia%2C_1894.jpg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/4/47/John_William_Waterhouse_-_Boreas%2C_1903.jpg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/5/5d/John_William_Waterhouse_-_Gather_Ye_Rosebuds_While_Ye_May%2C_1909.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, center center, center center, bottom right, bottom left;
+    background-size: 25%, 30%, 25%, 20%, 25%;
+    background-blend-mode: lighten;
     font-family: 'Courier New', monospace;
     color: #e0dcd5;
     margin: 0;
@@ -29,7 +32,7 @@ body {
     top: 0;
     width: 180px;
     height: 100%;
-    background-color: rgba(46, 26, 47, 0.85); /* slightly transparent purple */
+    background-color: rgba(46, 26, 47, 0.85); /* semi-transparent goth purple */
     border-right: 3px solid #5c3a4d;
     padding-top: 20px;
 }
@@ -78,7 +81,7 @@ h1, h2 {
 .archive-item {
     border: 2px solid #5c3a4d;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    background-color: rgba(62, 42, 62, 0.8); /* slightly transparent parchment-like */
+    background-color: rgba(62, 42, 62, 0.8);
     padding: 15px;
     margin: 20px auto;
     width: 70%;
