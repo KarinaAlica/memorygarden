@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Memory Garden</title>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f4f0e8;
-      background-image: url('https://i.ibb.co/tCJpK2L/stars-bg.gif');
-      background-repeat: repeat;
-      color: #2b1f18;
-      font-family: "VT323", monospace;
-      text-align: center;
-      padding-top: 15vh;
-      font-size: 20px;
-      image-rendering: pixelated;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Garden 🌸</title>
 
-    h1 {
-      font-size: 2.5em;
-      color: #3b2d2d;
-      text-shadow: 1px 1px 0 #fff8e1;
-      margin-bottom: 0.5em;
-    }
+<style>
+/* BODY & BACKGROUND */
+body {
+    background-color: #ffccff;
+    background-image: url('https://i.imgur.com/3JpFf0V.gif'); /* fun tiled pattern */
+    background-repeat: repeat;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #0000FF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-    .quote {
-      font-style: italic;
-      margin-bottom: 1.5em;
-    }
+/* HEADER & MARQUEE */
+header {
+    background-color: #ff99ff;
+    border: 4px outset #ff6600;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-    a {
-      text-decoration: none;
-      background-color: #e7dfc6;
-      color: #3b2d2d;
-      border: 2px solid #3b2d2d;
-      padding: 6px 14px;
-      border-radius: 8px;
-      transition: 0.3s;
-      box-shadow: 3px 3px 0 #3b2d2d;
-    }
+marquee {
+    font-size: 1.2em;
+    color: #ff0000;
+}
 
-    a:hover {
-      background-color: #d4c7a8;
-      transform: translateY(-2px);
-      box-shadow: 4px 4px 0 #3b2d2d;
-    }
+/* ARCHIVE ITEMS */
+.archive-item {
+    border: 4px inset #00cc00;
+    background-color: #ffff99;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      font-size: 0.8em;
-      color: #5c4a3a;
-    }
+.archive-item:hover {
+    transform: scale(1.05);
+}
 
-    .sparkle {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background-image: url('https://i.ibb.co/SrcspZt/sparkle.gif');
-      animation: float 6s infinite ease-in-out;
-    }
+/* FLOATING GIFS */
+.floating-gif {
+    position: absolute;
+    width: 50px;
+    animation: float 6s ease-in-out infinite;
+}
 
-    @keyframes float {
-      0% { transform: translateY(0); opacity: 1; }
-      50% { transform: translateY(-15px); opacity: 0.8; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    border-top: 4px outset #ff6600;
+    padding: 10px;
+    background-color: #ffccff;
+}
+
+/* BLINKING TEXT */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+</style>
 </head>
 <body>
-  <div class="sparkle" style="top:20%; left:25%;"></div>
-  <div class="sparkle" style="top:50%; left:75%;"></div>
-  <div class="sparkle" style="top:70%; left:40%;"></div>
 
-  <h1>✿ Welcome to the Memory Garden ✿</h1>
-  <p class="quote">“Where fragments of time are preserved and allowed to bloom again.”</p>
-  <a href="#">Enter the Archive</a>
+<header>
+    <h1>🌸 Memory Garden 🌸</h1>
+    <marquee behavior="scroll" direction="left">Welcome to the most nostalgic corner of the web! 💖✨</marquee>
+</header>
 
-  <footer>
-    <p>© 2025 Karina Silva — best viewed on Netscape 🌙</p>
-  </footer>
+<div class="archive-item">
+    <h2>💌 Entry #1</h2>
+    <p>Remembering childhood vibes and 90s internet magic.</p>
+</div>
+
+<div class="archive-item">
+    <h2>💾 Entry #2</h2>
+    <p class="blink">Under construction... Stay tuned! 🌟</p>
+</div>
+
+<!-- Floating GIFs -->
+<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:100px; left:20px;">
+<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:200px; right:30px;">
+
+<footer>
+    <p>© 2025 Memory Garden. Totally retro vibes 💻✨</p>
+</footer>
+
 </body>
 </html>
-
