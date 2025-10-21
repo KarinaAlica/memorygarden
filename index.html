@@ -8,11 +8,11 @@
 <style>
 /* BODY & BACKGROUND */
 body {
-    background-color: #013220; /* dark vintage green */
-    background-image: url('https://i.imgur.com/EZxwC3G.png'); /* subtle texture */
+    background-color: #0d0d0d; /* black for contrast */
+    background-image: url('https://i.imgur.com/EZxwC3G.png'); /* parchment placeholder texture */
     background-repeat: repeat;
     font-family: 'Courier New', monospace;
-    color: #cfcfcf;
+    color: #e0dcd5; /* soft cream */
     margin: 0;
     padding: 0;
 }
@@ -22,78 +22,79 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 160px;
+    width: 180px;
     height: 100%;
-    background-color: #1e4d2b; /* slightly lighter green */
-    border-right: 3px solid #556b2f;
+    background-color: #2e1a2f; /* deep goth purple */
+    border-right: 3px solid #5c3a4d;
     padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.4);
 }
 
 .sidebar a {
     display: block;
     text-decoration: none;
-    color: #cfcfcf;
+    color: #e0dcd5;
     font-family: 'Goudy Bookletter 1911', serif;
     margin: 10px;
     padding: 8px;
-    background-color: #2c6b3d;
-    border: 2px inset #556b2f;
+    background-color: #3e2a3e; /* muted purple blocks */
+    border: 2px inset #5c3a4d;
     transition: all 0.3s;
     text-align: center;
 }
 
 .sidebar a:hover {
     transform: scale(1.05);
-    background-color: #556b2f;
-    color: #f0f0f0;
+    background-color: #5c3a4d;
+    color: #f0e6d2;
 }
 
 /* HEADER & MARQUEE */
 header {
-    margin-left: 160px;
-    background-color: #1e4d2b;
-    border: 3px solid #556b2f;
+    margin-left: 180px;
+    background-color: #3e2a3e;
+    border: 3px solid #5c3a4d;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 marquee, .bulletin {
     font-family: 'Courier New', monospace;
-    color: #cfcfcf;
+    color: #d9c7b8; /* soft parchment cream */
 }
 
 /* HEADINGS */
 h1, h2 {
     font-family: 'Goudy Bookletter 1911', serif;
-    color: #a0d6b4; /* soft vintage greenish */
-    margin-left: 160px;
+    color: #c9a9c9; /* whimsical purple */
+    margin-left: 180px;
 }
 
 /* ARCHIVE ITEMS */
 .archive-item {
-    border: 2px solid #556b2f;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    background-color: #2c6b3d;
+    border: 2px solid #5c3a4d;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    background-color: #3e2a3e;
     padding: 15px;
     margin: 20px auto;
     width: 70%;
     transition: transform 0.3s;
-    color: #e0e0d1;
+    color: #e0dcd5;
 }
 
 .archive-item:hover {
     transform: scale(1.03);
+    background-color: #5c3a4d;
 }
 
 /* FOOTER */
 footer {
     margin-top: 40px;
-    border-top: 3px solid #556b2f;
+    border-top: 3px solid #5c3a4d;
     padding: 10px;
-    background-color: #1e4d2b;
-    margin-left: 160px;
+    background-color: #3e2a3e;
+    margin-left: 180px;
 }
 
 /* BLINKING TEXT */
@@ -111,7 +112,7 @@ footer {
     width: 100%;
     top: 50%;
     font-size: 1.2em;
-    color: #a0d6b4;
+    color: #d9c7b8;
     animation: scroll-left 20s linear infinite;
     white-space: nowrap;
 }
@@ -123,7 +124,7 @@ footer {
 
 /* MAIN CONTENT OFFSET */
 .main-content {
-    margin-left: 160px;
+    margin-left: 180px;
 }
 
 /* VINTAGE 90s STYLE SYMBOLS */
@@ -137,33 +138,46 @@ footer {
 
 <!-- SIDEBAR -->
 <div class="sidebar">
-    <a href="#">Home ★</a>
+    <a href="#">Home ✿</a>
+    <a href="#">Folklore ☾</a>
+    <a href="#">Material ♫</a>
+    <a href="#">Art ★</a>
     <a href="#">Archive ☼</a>
-    <a href="#">About ♫</a>
+    <a href="#">About ☺</a>
     <a href="#">Links ✿</a>
-    <a href="#">Contact ☺</a>
+    <a href="#">Contact ✧</a>
 </div>
 
 <header class="main-content">
-    <h1>Memory Garden ✿☼★</h1>
-    <marquee behavior="scroll" direction="left">Vintage meets 90s web! Retro vibes, Victorian hints, and pixel nostalgia ✨</marquee>
+    <h1>Memory Garden ☾✿★</h1>
+    <marquee behavior="scroll" direction="left">Whimsigoth meets 90s web! Victorian whispers, retro vibes, and pixel nostalgia ✧</marquee>
 </header>
 
 <!-- Bulletin scrolling text -->
-<div class="bulletin">✿ New entries added daily! ★ Visit often ☼ ✿</div>
+<div class="bulletin">★ New folklore, art, and material entries added daily! ☾ Visit often ✿</div>
 
 <div class="main-content archive-item">
-    <h2>Entry #1 ♫</h2>
-    <p>Remembering childhood vibes and early internet magic, now with vintage charm ☺ ✿</p>
+    <h2>Folklore ☾</h2>
+    <p>Stories, myths, and magical traditions curated for your whimsical exploration ✿</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Entry #2 ☼</h2>
-    <p class="blink">Under construction... Stay tuned! ★ ✿</p>
+    <h2>Material ♫</h2>
+    <p>Resources, craft ideas, and archival material from past eras ★</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>Art ★</h2>
+    <p>Illustrations, sketches, and visuals capturing vintage and mystical vibes ☺</p>
+</div>
+
+<div class="main-content archive-item">
+    <h2>Archive ☼</h2>
+    <p>Older entries and notes preserved for posterity ✿</p>
 </div>
 
 <footer class="main-content">
-    <p>© 2025 Memory Garden. Retro 90s + vintage vibes ☺ ★ ✿</p>
+    <p>© 2025 Memory Garden. Whimsigoth + vintage 90s vibes ☾★✿</p>
 </footer>
 
 </body>
