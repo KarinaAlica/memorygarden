@@ -8,11 +8,10 @@
 <style>
 /* BODY & BACKGROUND */
 body {
-    background-color: #0d0d0d; /* dark whimsical background */
+    background-color: #0d0d0d; /* dark whimsical base */
+    color: #e0dcd5; /* soft text */
     font-family: 'Courier New', monospace;
-    color: #e0dcd5;
-    margin: 0;
-    padding: 0;
+    cursor: url('images/flower_cursor.png'), auto; /* quirky mouse placeholder */
 }
 
 /* SIDEBAR */
@@ -22,20 +21,20 @@ body {
     top: 0;
     width: 180px;
     height: 100%;
-    background-color: rgba(46, 26, 47, 0.85); 
-    border-right: 3px solid #5c3a4d;
+    background-color: rgba(33, 45, 33, 0.9); /* soft vintage green */
+    border-right: 3px solid #6b4f6b; /* muted purple */
     padding-top: 20px;
 }
 
 .sidebar a {
     display: block;
     text-decoration: none;
-    color: #e0dcd5;
+    color: #d9d0c7; /* soft vintage text */
     font-family: 'Courier New', monospace;
     margin: 10px;
     padding: 8px;
-    background-color: rgba(62, 42, 62, 0.85);
-    border: 2px inset #5c3a4d;
+    background-color: rgba(62, 42, 62, 0.85); /* muted purple overlay */
+    border: 2px inset #6b4f6b;
     transition: all 0.3s;
     text-align: center;
     font-size: 0.95em;
@@ -43,7 +42,7 @@ body {
 
 .sidebar a:hover {
     transform: scale(1.05);
-    background-color: #5c3a4d;
+    background-color: #6b4f6b;
     color: #f0e6d2;
 }
 
@@ -51,29 +50,29 @@ body {
 header {
     margin-left: 180px;
     background-color: rgba(62, 42, 62, 0.85);
-    border: 3px solid #5c3a4d;
+    border: 3px solid #6b4f6b;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 marquee, .bulletin {
     font-family: 'Courier New', monospace;
-    color: #d9c7b8;
+    color: #d9c7b8; /* parchment soft text */
     font-size: 1em;
 }
 
 /* HEADINGS */
 h1, h2 {
     font-family: 'Courier New', monospace;
-    color: #c9a9c9;
+    color: #c7a9c7; /* faded lavender */
     margin-left: 180px;
 }
 
 /* ARCHIVE ITEMS */
 .archive-item {
-    border: 2px solid #5c3a4d;
+    border: 2px solid #6b4f6b;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    background-color: rgba(62, 42, 62, 0.8);
+    background-color: rgba(62, 52, 72, 0.85); /* muted purple with green hints */
     padding: 15px;
     margin: 20px auto;
     width: 70%;
@@ -89,7 +88,7 @@ h1, h2 {
 /* FOOTER */
 footer {
     margin-top: 40px;
-    border-top: 3px solid #5c3a4d;
+    border-top: 3px solid #6b4f6b;
     padding: 10px;
     background-color: rgba(62, 42, 62, 0.85);
     margin-left: 180px;
@@ -179,13 +178,13 @@ footer {
 <!-- SIDEBAR -->
 <div class="sidebar">
     <a href="#">Home / Foyer ✿</a>
-    <a href="#">Journal Room 🖋️</a>
-    <a href="#">Folklore & Field Notes 🌾</a>
-    <a href="#">Apothecary / Herbarium 🌿</a>
-    <a href="#">Collages & Ephemera 🖼️</a>
-    <a href="#">Kitchen / Hearth 🍞</a>
-    <a href="#">Manifesto / About the Archivist 🕯️</a>
-    <a href="#">The Vault 🔒</a>
+    <a href="#">Journal Room ❀</a>
+    <a href="#">Folklore & Field Notes ☾</a>
+    <a href="#">Apothecary / Herbarium ★</a>
+    <a href="#">Collages & Ephemera ☼</a>
+    <a href="#">Kitchen / Hearth ☺</a>
+    <a href="#">Manifesto / About the Archivist ✧</a>
+    <a href="#">The Vault ♫</a>
 </div>
 
 <header class="main-content">
@@ -202,37 +201,37 @@ footer {
 </div>
 
 <div class="main-content archive-item">
-    <h2>Journal Room 🖋️</h2>
+    <h2>Journal Room ❀</h2>
     <p>Personal reflections, letters, essays, or notes from the present. Optional filters: moods, themes, or dates.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Folklore & Field Notes 🌾</h2>
+    <h2>Folklore & Field Notes ☾</h2>
     <p>A growing catalog of myths, traditions, and plant lore you’ve gathered. Could include scans, photos of handwritten notes, or short essays.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Apothecary / Herbarium 🌿</h2>
+    <h2>Apothecary / Herbarium ★</h2>
     <p>Herbal recipes, foraging notes, and natural remedies. Designed like an old medical ledger or illustrated grimoire page.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Collages & Ephemera 🖼️</h2>
+    <h2>Collages & Ephemera ☼</h2>
     <p>Scanned collages, photos, letters, fragments, or art pieces. Each image could open to a “note” or caption.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Kitchen / Hearth 🍞</h2>
+    <h2>Kitchen / Hearth ☺</h2>
     <p>Recipes, home rituals, and traditions. Feels like an old recipe card system or kitchen diary.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>Manifesto / About the Archivist 🕯️</h2>
+    <h2>Manifesto / About the Archivist ✧</h2>
     <p>A poetic statement of intent about why you’re building this — your mission, voice, and guiding spirit.</p>
 </div>
 
 <div class="main-content archive-item">
-    <h2>The Vault 🔒</h2>
+    <h2>The Vault ♫</h2>
     <p>Password-protected area for drafts, personal entries, or experimental work. Optional / private.</p>
 </div>
 
