@@ -8,19 +8,50 @@
 <style>
 /* BODY & BACKGROUND */
 body {
-    background-color: #fdf6e3; /* parchment cream */
-    background-image: url('https://i.imgur.com/EZxwC3G.png'); /* subtle grid/parchment */
+    background-color: #fdf6e3;
+    background-image: url('https://i.imgur.com/EZxwC3G.png');
     background-repeat: repeat;
     font-family: 'Courier New', monospace;
     color: #333;
-    text-align: center;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    background-color: #d8a39d;
+    border-right: 3px solid #cfae7d;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #556b2f;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 10px;
+    padding: 8px;
+    background-color: #fff8f0;
+    border: 2px inset #cfae7d;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    transform: scale(1.05);
+    background-color: #cfae7d;
+    color: #fff8f0;
 }
 
 /* HEADER & MARQUEE */
 header {
+    margin-left: 160px;
     background-color: #d8a39d;
     border: 3px solid #cfae7d;
     padding: 20px;
@@ -37,6 +68,7 @@ marquee, .bulletin {
 h1, h2 {
     font-family: 'Goudy Bookletter 1911', serif;
     color: #556b2f;
+    margin-left: 160px;
 }
 
 /* ARCHIVE ITEMS */
@@ -46,8 +78,7 @@ h1, h2 {
     background-color: #fff8f0;
     padding: 15px;
     margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
+    width: 70%;
     transition: transform 0.3s;
 }
 
@@ -75,6 +106,7 @@ footer {
     border-top: 3px solid #cfae7d;
     padding: 10px;
     background-color: #fdf6e3;
+    margin-left: 160px;
 }
 
 /* BLINKING TEXT */
@@ -86,13 +118,13 @@ footer {
   50% { opacity: 0; }
 }
 
-/* BULLETIN SCROLLING TEXTS */
+/* BULLETIN SCROLLING TEXT */
 .bulletin {
     position: absolute;
     width: 100%;
     top: 50%;
     font-size: 1.2em;
-    color: #a0522d; /* sepia brown */
+    color: #a0522d;
     animation: scroll-left 20s linear infinite;
     white-space: nowrap;
 }
@@ -101,39 +133,50 @@ footer {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
+
+/* MAIN CONTENT OFFSET */
+.main-content {
+    margin-left: 160px;
+}
 </style>
 </head>
 <body>
 
-<header>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Archive</a>
+    <a href="#">About</a>
+    <a href="#">Links</a>
+    <a href="#">Contact</a>
+</div>
+
+<header class="main-content">
     <h1>🌸 Memory Garden 🌸</h1>
-    <marquee behavior="scroll" direction="left">Welcome to a retro-vintage corner of the web! Early computers, Victorian vibes, and 90s nostalgia ✨</marquee>
+    <marquee behavior="scroll" direction="left">Vintage meets 90s web! Victorian vibes, pixel fun, and retro chaos ✨</marquee>
 </header>
 
 <!-- Bulletin scrolling text -->
 <div class="bulletin">✨ New entries added daily! Visit often! ✨</div>
 
-<div class="archive-item">
+<div class="main-content archive-item">
     <h2>💌 Entry #1</h2>
     <p>Remembering childhood vibes and old internet magic, now with vintage charm.</p>
 </div>
 
-<div class="archive-item">
+<div class="main-content archive-item">
     <h2>💾 Entry #2</h2>
     <p class="blink">Under construction... Stay tuned! 🌟</p>
 </div>
 
-<!-- Floating vintage/pixel GIFs -->
-<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:100px; left:20px;">
-<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:200px; right:30px;">
-<img src="https://i.imgur.com/3Lw7d.gif" class="floating-gif" style="top:150px; left:50%;">
-
-<!-- Under Construction Corner -->
+<!-- Floating GIFs -->
+<img src="https://i.imgur.com/8pQZc.gif" class="floating-gif" style="top:100px; left:200px;">
+<img src="https://i.imgur.com/3Lw7d.gif" class="floating-gif" style="top:250px; left:50%;">
 <img src="https://i.imgur.com/FY3K3gC.gif" class="floating-gif" style="bottom:10px; right:10px; width:80px; filter: sepia(0.4);">
 
-<footer>
-    <p>© 2025 Memory Garden. A 90s-vintage web chaos experience 💻✨</p>
+<footer class="main-content">
+    <p>© 2025 Memory Garden. A 90s-vintage GeoCities-style web experience 💻✨</p>
 </footer>
 
 </body>
-</html>
+<
