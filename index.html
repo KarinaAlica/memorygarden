@@ -4,42 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Memory Garden</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #f5edd6;
-      font-family: "EB Garamond", serif;
-      color: #2f3e2f;
+      background-color: #f4f0e8;
+      background-image: url('https://i.ibb.co/tCJpK2L/stars-bg.gif');
+      background-repeat: repeat;
+      color: #2b1f18;
+      font-family: "VT323", monospace;
       text-align: center;
       padding-top: 15vh;
+      font-size: 20px;
+      image-rendering: pixelated;
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 1em;
+      font-size: 2.5em;
+      color: #3b2d2d;
+      text-shadow: 1px 1px 0 #fff8e1;
+      margin-bottom: 0.5em;
     }
 
     .quote {
       font-style: italic;
-      font-size: 1.1em;
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
     }
 
     a {
       text-decoration: none;
-      color: #2f3e2f;
-      border-bottom: 1px solid #2f3e2f;
+      background-color: #e7dfc6;
+      color: #3b2d2d;
+      border: 2px solid #3b2d2d;
+      padding: 6px 14px;
+      border-radius: 8px;
       transition: 0.3s;
+      box-shadow: 3px 3px 0 #3b2d2d;
     }
 
     a:hover {
-      color: #5a6b5a;
-      border-bottom: 1px solid #5a6b5a;
+      background-color: #d4c7a8;
+      transform: translateY(-2px);
+      box-shadow: 4px 4px 0 #3b2d2d;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 0.8em;
+      color: #5c4a3a;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-image: url('https://i.ibb.co/SrcspZt/sparkle.gif');
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-15px); opacity: 0.8; }
+      100% { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to the Memory Garden</h1>
+  <div class="sparkle" style="top:20%; left:25%;"></div>
+  <div class="sparkle" style="top:50%; left:75%;"></div>
+  <div class="sparkle" style="top:70%; left:40%;"></div>
+
+  <h1>✿ Welcome to the Memory Garden ✿</h1>
   <p class="quote">“Where fragments of time are preserved and allowed to bloom again.”</p>
   <a href="#">Enter the Archive</a>
+
+  <footer>
+    <p>© 2025 Karina Silva — best viewed on Netscape 🌙</p>
+  </footer>
 </body>
 </html>
+
